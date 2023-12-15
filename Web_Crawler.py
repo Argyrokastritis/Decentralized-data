@@ -4,6 +4,7 @@ import names
 
 computer_science_universities = [
     "MIT",
+    "CEID",
     "Stanford University",
     "Carnegie Mellon University",
     "UC Berkeley",
@@ -37,7 +38,7 @@ computer_science_universities = [
     "University of Sydney",
     "Shanghai Jiao Tong University"
     "University of California--Irvine"
-    "CEID University of Patras"
+
 ]
 
 
@@ -77,9 +78,9 @@ def generate_data(length):
             row_count += 1  # Increment the counter
 
         # Print the extracted data
-        for scientist in scientists:
-            print(
-                f"Surname: {scientist.surname} (CSV scientist),\t Awards: {scientist.awards},\t Education: {scientist.education},\t Description: {scientist.description}")
+        #for scientist in scientists:
+            #print(
+                #f"Surname: {scientist.surname} (CSV scientist),\t Awards: {scientist.awards},\t Education: {scientist.education},\t Description: {scientist.description}")
 
         # Add randomly generated scientists if necessary
         if length > row_count:
@@ -96,10 +97,10 @@ def generate_data(length):
                 scientist = Scientist(surname, awards, "", education)
                 scientists.append(scientist)
                 # Print the scientist object
-                print(
-                    f"Surname: {scientist.surname},\t Awards: {scientist.awards},\t Education: {scientist.education},\t Description: {scientist.description}")
+                #print(
+                    #f"Surname: {scientist.surname},\t Awards: {scientist.awards},\t Education: {scientist.education},\t Description: {scientist.description}")
 
         # Print the number of rows
-        print(f"Number of rows: {len(scientists)}")
+        #print(f"Number of rows: {len(scientists)}")
         data = scientists
         return data
