@@ -147,12 +147,16 @@ def experiments():
     print(f'Pastry average query time miliseconds: {1000 * mean(column(query_times, 1)) / scale}')
 
 
-exper_answer = input("""\n\nWould you like to run the experiments?""")
-if exper_answer == 'y' or 'Y':
+exper_answer = input("""\n\nWould you like to run the experiments? Please answer with y for yes and n for no  """)
+# print(exper_answer)
+if exper_answer.lower() == 'y':
     experiments()
 
+elif exper_answer.lower() == 'n':
+    print('Next time please consider running them to see the efficiency of each algorithm in time')
+
 # Ask user if they want to exit
-ans = input("""\n\n\nDo you want to exit the decentralized algorithms project?""")
+ans = input("""\n\n\nDo you want to exit the decentralized algorithms project?  """)
 if ans == 'y' or ans == 'Y':
     exit()
 
