@@ -95,7 +95,7 @@ def column(matrix, i):
 
 
 def experiments():
-    scale = 10000
+    scale = 200
     query_times = []
     print('\nNow it is going to run the iterations wait a minute or less for the procedure to be completed\n')
     for i in range(100):
